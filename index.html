@@ -1,51 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Expense Tracker</title>
-  </head>
-  <body>
-    <h2> ProGrad Expense Tracker</h2>
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h2 style="text-align: center"> Regex VALIDATION</h2>
+<form name="RegForm" action="#" onsubmit="return formValidate()">
+    <p>Name : <input type="text" name="Name" id="name"></p>
+    <label class="alert" id="sname"></label>
+    <br>
 
-    <div class="container">
-      <h4>Your Balance</h4>
-      <h1>$<span id="balance">0.00</span></h1>
+    <p> Address : <input type="text" name="Address" id="address">  </p>
+    <label class="alert" id="sadd" for="Address"></label>
+    <br>
 
-      <div class="inc-exp-container">
-        <div>
-          <h4>Income</h4>
-          <p class="money plus">+$<span id="money-plus">0.00</span></p>
-        </div>
-        <div>
-          <h4>Expense</h4>
-          <p class="money minus">-$<span id="money-minus">0.00</span></p>
-        </div>
-      </div>
-    
-      <div class="history">
-      <h3> Transaction History</h3>
-      <div id="listDiv">
-        <ul id="list" class="list">
-        </ul>
-      </div>
-    </div>
-      <h3>Add new transaction</h3>
-        <div class="form-control">
-          <label for="text">Text (Max. 20 characters)</label>
-          <input type="text" id="text" oninput="btnEnable()" placeholder="Enter text..." />
-        </div>
-        <div class="form-control">
-          <label for="amount">Amount <br/>
-            (Negative - Expense, Positive - Income)</label
-          >
-          <input type="number" id="amount" oninput="btnEnable()" placeholder="Enter amount..." />
-        </div>
-        <button class="btn" id="button" onclick="infoSubmit()" disabled="true">Add transaction</button>
-    </div>
+    <p>E-mail : <input type="text"  name="EMail" id="email"></p>
+    <label class="alert" id="smail"></label>
+    <br>
 
-    <script src="./script.js"></script>
-  </body>
+    <p>Password : <input type="password" name="Password" id="pwd"> </p>
+    <label class="alert" id="spass"></label>
+    <br> <br> 
+
+    <p>Confirm Password : <input type="password" name="cPassword" id="cpwd"> </p>
+    <label class="alert" id = "sconpass"></label>
+    <br> <br>
+
+    <p>Phone : <input type="number" name="phone" id="phone"> </p>
+    <label class="alert" id="sphone"></label>
+    <br> <br>   
+
+    <p><input type="submit" value="Check" name="Submit"></p><br>   
+
+    <p id="result"></p>
+
+</form> 
+</body> 
 </html>
