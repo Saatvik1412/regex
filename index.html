@@ -1,0 +1,42 @@
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h2 style="text-align: center"> Regex VALIDATION</h2>
+<form name="RegForm" action="#" onsubmit="return formValidate()">
+    <p>Name : <input type="text" name="Name" id="name"></p>
+    <label class="alert" id="sname"></label>
+    <br>
+
+    <p> Address : <input type="text" name="Address" id="address">  </p>
+    <label class="alert" id="sadd" for="Address"></label>
+    <br>
+
+    <p>E-mail : <input type="text"  name="EMail" id="email"></p>
+    <label class="alert" id="smail"></label>
+    <br>
+
+    <p>Password : <input type="password" name="Password" id="pwd"> </p>
+    <label class="alert" id="spass"></label>
+    <br> <br> 
+
+    <p>Confirm Password : <input type="password" name="cPassword" id="cpwd"> </p>
+    <label class="alert" id = "sconpass"></label>
+    <br> <br>
+
+    <p>Phone : <input type="number" name="phone" id="phone"> </p>
+    <label class="alert" id="sphone"></label>
+    <br> <br>   
+
+    <p><input type="submit" value="Check" name="Submit"></p><br>   
+
+    <p id="result"></p>
+
+</form> 
+</body> 
+</html>
